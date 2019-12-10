@@ -1,0 +1,19 @@
+package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.dynamic.datasource.annotation.DS;
+import org.apache.ibatis.annotations.Mapper;
+
+ /**
+ * 
+ * $!{table.comment} Mapper 接口
+ * @作者 ${author}
+ * @时间 ${date}
+ */
+@DS("${cfg.dataBaseName}")
+@Mapper
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+ 
+
+}
